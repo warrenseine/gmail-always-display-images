@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Gmail — Always Display Images",
+  "version": "1.0",
+  "icons": { "128": "icon_128.png" },
+  "description": "Finally.",
+  "content_scripts": [
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "web_accessible_resources": ["runtime.js", "gmail.min.js"],
+  "update_url": "https://github.com/warrenseine/gmail-always-display-images/raw/master/updates.xml"
+}
