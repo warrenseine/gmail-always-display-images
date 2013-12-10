@@ -1,15 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "Gmail — Always Display Images",
+  "name": "Always Display Images for Gmail™",
   "version": "1.0",
   "icons": { "128": "icon_128.png" },
-  "description": "Finally.",
+  "description": "Finally. An extension to avoid clicking on this pointless link.",
   "content_scripts": [
     {
       "matches": ["*://mail.google.com/*"],
       "js": ["main.js"]
     }
   ],
-  "web_accessible_resources": ["runtime.js", "gmail.min.js"],
-  "update_url": "https://github.com/warrenseine/gmail-always-display-images/raw/master/updates.xml"
+  "web_accessible_resources": ["runtime.js", "gmail.min.js"]
 }
